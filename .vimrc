@@ -9,7 +9,7 @@ set hidden          " Hide warning when opening files
 set ignorecase  " Ignore case in searchs
 set smartcase	" Consider case if there is a upper case character
 set incsearch	" Incremental search
-"set nohlsearch " Clear highlight after a search
+set nohlsearch " Clear highlight after a search
 
 " indentation
 set autoindent  	" Autoindent always ON.
@@ -40,16 +40,17 @@ set wildmenu		" Enable visual wildmenu
 
 " Remaps ----------------------------------------------------------------------
 
+let mapleader=" "
+
+" Split resize
+nnoremap <Leader>> 10<C-w>>
+nnoremap <Leader>< 10<C-w><
+
 " Shortcuts for split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-" Adding an empty line below, above and below with insert
-nmap op o<Esc>k
-nmap oi O<Esc>j
-nmap oo A<CR>
 
 " Create a tab
 nmap te :tabe<CR>
@@ -68,7 +69,4 @@ nmap ts :vsplit<CR>
 " Close splits and others
 nmap tt :q<CR>
 
-" Call command shortcut
-nmap tc :!
-
-so ~/.vim/plugins/plugins.vim
+so ~/.vim/plugged/plugins.vim
