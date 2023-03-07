@@ -1,15 +1,11 @@
 " Config general --------------------------------------------------------------
 
-set nocompatible    " Override vi support
-set mouse=a         " Enable mouse
-set encoding=utf-8  " Always use unicode
-set hidden          " Hide warning when opening files
-
 " search
 set ignorecase  " Ignore case in searchs
 set smartcase	" Consider case if there is a upper case character
 set incsearch	" Incremental search
-set nohlsearch " Clear highlight after a search
+set hlsearch    " Highlight matches
+"set nohlsearch  " Clear highlight after a search
 
 " indentation
 set autoindent  	" Autoindent always ON.
@@ -25,8 +21,14 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set encoding=utf-8  " Always use unicode
+set nocompatible    " Override vi support
+set hidden          " Hide warning when opening files
+set updatetime=100  " Time to consider the changes
+
 " Config interface
 syntax on
+set mouse=a         " Enable mouse
 set nu rnu			" Relative numbers and the current line number
 set cursorline		" Highlight cursor line
 set splitright		" Create the vertical splits to the right
@@ -38,35 +40,5 @@ set wildmenu		" Enable visual wildmenu
 "set colorcolumn=80
 "set nowrap			" The text does not protrude from the screen
 
-" Remaps ----------------------------------------------------------------------
-
-let mapleader=" "
-
-" Split resize
-nnoremap <Leader>> 10<C-w>>
-nnoremap <Leader>< 10<C-w><
-
-" Shortcuts for split navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
-" Create a tab
-nmap te :tabe<CR>
-
-" Navigate between buffers
-nmap ty :bn<CR>
-nmap tr :bp<CR>
-
-" Delete a buffer
-nmap td :bd<CR>
-
-" Create splits
-nmap ti :split<CR>
-nmap ts :vsplit<CR>
-
-" Close splits and others
-nmap tt :q<CR>
-
+so ~/.vim/.maps.vim
 so ~/.vim/plugged/plugins.vim
