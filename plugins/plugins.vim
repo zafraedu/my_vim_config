@@ -1,11 +1,3 @@
-" auto-install vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
-
-
 " Plugins ---------------------------------------------------------------------
 call plug#begin('~/.vim/plugins/plugged')
 
@@ -13,8 +5,11 @@ call plug#begin('~/.vim/plugins/plugged')
 Plug 'sheerun/vim-polyglot'
 
 " Autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Search
+Plug 'junegunn/fzf'
 
 " Themes
 Plug 'morhetz/gruvbox'

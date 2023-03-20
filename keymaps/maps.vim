@@ -1,10 +1,6 @@
 " Remaps ----------------------------------------------------------------------
 let mapleader=" "
 
-" Split resize
-nnoremap <Leader>> 10<C-w>>
-nnoremap <Leader>< 10<C-w><
-
 " Shortcuts for split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -13,6 +9,9 @@ map <C-l> <C-w>l
 
 " Clear highlight after a search
 nnoremap // :noh<CR>
+
+" fzf search
+nnoremap <C-f> :FZF<CR>
 
 " Create a tab
 nnoremap tt :tabe<CR>
@@ -25,8 +24,8 @@ nnoremap tr :bp<CR>
 nnoremap td :bd<CR>
 
 " Create splits
-nnoremap ns :vsplit<CR>
-nnoremap ni :split<CR>
+nnoremap <Leader>ns :vsplit<CR>
+nnoremap <Leader>ni :split<CR>
 
 " Close splits and others
 nnoremap qq :q<CR>

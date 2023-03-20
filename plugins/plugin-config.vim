@@ -1,4 +1,4 @@
-  " Plug-config -----------------------------------------------------------------
+" Plug-config -----------------------------------------------------------------
 
 " Themes ----------------------------------------------------------------------
 " gruvbox ---------------------------------- https://github.com/morhetz/gruvbox
@@ -34,32 +34,25 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 
 
-" ALE (Asynchronous Lint Engine) -------- https://github.com/dense-analysis/ale
-let g:ale_fixers = {
-\   '*': ['trim_whitespace'],
+" Ale (Asynchronous Lint Engine) -------- https://github.com/dense-analysis/ale
+ let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
+
 let g:ale_fix_on_save = 1
 
 
 
 " COC (Conquer of Completion) ------------ https://github.com/neoclide/coc.nvim
 " coc base
-let g:coc_global_extensions = [ 'coc-snippets', 'coc-git', 'coc-emmet', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-prettier' ]
+let g:coc_global_extensions = [ 'coc-snippets', 'coc-git', 'coc-emmet',
+\'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-prettier'  ]
+
+" Mappings Completion
+inoremap <expr><cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " Mappings Go To's
 nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
-" Mappings Completion
-inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-
-" Mappings Hover Documentation
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
