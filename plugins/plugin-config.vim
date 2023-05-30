@@ -7,7 +7,7 @@ let g:gruvbox_italic=1
 " dracula ---------------------------- https://github.com/dracula/dracula-theme
 
 set background=dark
-colorscheme dracula
+colorscheme gruvbox
 
 
 

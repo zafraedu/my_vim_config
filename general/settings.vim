@@ -28,8 +28,8 @@ set updatetime=100  " Time to consider the changes
 
 " Config interface
 syntax on
-set mouse=a         	" Enable mouse
-set nu rnu		" Relative numbers and the current line number
+set mouse=a         " Enable mouse
+set nu rnu		    " Relative numbers and the current line number
 set cursorline		" Highlight cursor line
 set splitright		" Create the vertical splits to the right
 set splitbelow		" Create the vertical splits to the below
@@ -38,4 +38,4 @@ set showmatch		" Higlight matching parentheses and brackets
 set wildmenu		" Enable visual wildmenu
 
 set colorcolumn=80
-"set nowrap			" The text does not protrude from the screen
+set nowrap			" The text does not protrude from the screen
