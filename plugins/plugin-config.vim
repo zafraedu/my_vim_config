@@ -25,8 +25,6 @@ let g:NERDTreeWinSize=40
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
-nnoremap <C-a> :NERDTreeToggle<CR>
-
 
 
 " indentLine --------------------------- https://github.com/Yggdroot/indentLine
@@ -50,9 +48,3 @@ let g:coc_global_extensions = [ 'coc-snippets', 'coc-git', 'coc-emmet',
 
 " Mappings Completion
 inoremap <expr><cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-
-" Mappings Go To's
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
