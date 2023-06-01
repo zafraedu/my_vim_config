@@ -1,4 +1,4 @@
-# My vim config
+# My vim config <img src="https://github.com/devicons/devicon/blob/master/icons/vim/vim-original.svg" alt="Vim logo" with="40" height="40">
 ## Instalación y modificación necesaria
 #### Agregar la configuración de vim
 Después de instalar y comprobar que ya tenemos vim instalado en nuestro sistema, agregamos mi repositorio a la ruta `/home/user`.
