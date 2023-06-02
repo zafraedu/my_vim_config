@@ -35,4 +35,6 @@ Abra `vim` y ejecuta `:PlugInstall`
 
 ![desmostracion del :PlugInstall](https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif)
 
-Al finalizar las descargas es solo salir de vim y entrar otra vez!!!
+Al finalizar las descargas es solo salir de vim, entrar otra vez y listo ya tenemos vim instalado y configurado en nuestro sistema!!!!!
+
+Haz click [aqui](https://github.com/zafraedu/.vim.wiki.git) para una introdución y una configuración más detallada de como configurar los temas, atajos del teclado...
