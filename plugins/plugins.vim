@@ -28,6 +28,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Typing
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-commentary'
 
 " IDE
 Plug 'Yggdroot/indentLine'
