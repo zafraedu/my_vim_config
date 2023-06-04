@@ -1,5 +1,5 @@
 " Remaps ----------------------------------------------------------------------
-let mapleader=" "
+let mapleader=","
 
 " Shortcuts for split navigation
 map <C-h> <C-w>h
@@ -9,6 +9,10 @@ map <C-l> <C-w>l
 
 " Clear highlight after a search
 nnoremap // :noh<CR>
+
+" Center the cursor vertically when moving to the next word during a search
+nnoremap n nzz
+nnoremap N Nzz
 
 " fzf search
 nnoremap <C-f> :FZF<CR>

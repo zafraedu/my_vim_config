@@ -1,5 +1,14 @@
 " Config general --------------------------------------------------------------
 
+" control
+set encoding=utf-8  " Always use unicode
+set hidden          " Hide warning when opening files
+set updatetime=100  " Time to consider the changes
+set nocompatible    " Override vi support
+filetype on         " Vim will be able to try to detect the type of file in use
+filetype plugin on  " Enable plugins and load plugin for the detected file type
+filetype indent on  " Load an indent file for the detected file type
+
 " search
 set ignorecase  " Ignore case in searchs
 set smartcase	" Consider case if there is a upper case character
@@ -21,21 +30,18 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set encoding=utf-8  " Always use unicode
-set nocompatible    " Override vi support
-set hidden          " Hide warning when opening files
-set updatetime=100  " Time to consider the changes
-
-" Config interface
+" Config interface{
 syntax on
-set mouse=a         " Enable mouse
-set nu rnu		    " Relative numbers and the current line number
-set cursorline		" Highlight cursor line
-set splitright		" Create the vertical splits to the right
-set splitbelow		" Create the vertical splits to the below
-set scrolloff=8		" Number of lines to keep above and below the cursor
-set showmatch		" Higlight matching parentheses and brackets
-set wildmenu		" Enable visual wildmenu
-
-set colorcolumn=80
-set nowrap			" The text does not protrude from the screen
+set mouse=a                 " Enable mouse
+set nu rnu                  " Relative numbers and the current line number
+set splitright              " Create the vertical splits to the right
+set splitbelow              " Create the vertical splits to the below
+set scrolloff=8             " Number of lines to keep above and below the cursor
+set showmatch               " Higlight matching parentheses and brackets
+set cursorline              " Highlight cursor line
+set cursorcolumn            " Higlight cursor column
+set nowrap			        " The text does not protrude from the screen
+set colorcolumn=80          " Add a highlight in column 80
+set wildmenu		        " Enable auto completion menu after pressing TAB
+set wildmode=list:longest   " Make wildmenu behave like bash
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
