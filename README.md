@@ -20,6 +20,7 @@ endif
 
 #### NerdFonts
 Instalaremos las [NerdFonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts) que queramos, luego la movemos a `/usr/share/fonts/`
+(cambiamos la funete del terminal)
 ```bash
 sudo mkdir /usr/share/fonts/NerdFonts
 sudo mv <nerdfont.ttf> /usr/share/fonst/NerdFonts/
