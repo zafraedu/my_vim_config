@@ -19,7 +19,6 @@ nnoremap <C-f> :FZF<CR>
 
 " Open/Clone sideBar
 nnoremap <C-a> :NERDTreeToggle<CR>
-inoremap <C-b> <Esc>:NERDTreeToggle<CR>a
 
 " Create a tab
 nnoremap tt :tabe<CR>
