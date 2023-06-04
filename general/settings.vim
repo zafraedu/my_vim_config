@@ -43,5 +43,4 @@ set cursorcolumn            " Higlight cursor column
 set nowrap			        " The text does not protrude from the screen
 set colorcolumn=80          " Add a highlight in column 80
 set wildmenu		        " Enable auto completion menu after pressing TAB
-set wildmode=list:longest   " Make wildmenu behave like bash
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
