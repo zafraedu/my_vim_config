@@ -6,7 +6,6 @@ Plug 'sheerun/vim-polyglot'
 
 " Autocomplete
 Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Search
 Plug 'junegunn/fzf'
