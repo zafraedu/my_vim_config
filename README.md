@@ -8,7 +8,7 @@ git clone https://github.com/zafraedu/.vim.git ~/.vim
 
 ## Modificar rutas
 
-crear el archivo `vimrc` y aagregar la ruta del archivo de configuración
+crear el archivo `vimrc` y agregar la ruta del archivo de configuración
 ```bash
 touch ~/.vimrc
 ```
