@@ -3,7 +3,7 @@
 ## Agregar la configuración de vim
 Después de instalar y comprobar que ya tenemos vim instalado en nuestro sistema, agregamos mi repositorio a la ruta `/home/user`.
 ```bash
-git clone https://github.com/zafraedu/.vim.git ~/.vim
+git clone https://github.com/zafraedu/my_vimrc.git ~/.vim
 ```
 
 ## Modificar rutas
@@ -23,10 +23,10 @@ Modificaremos el archivo `/usr/share/vim/vimrc`
 ```bash
 sudo vim /usr/share/vim/vimrc
 ```
-dentro de vim al final del código cambiaremos las rutas
+dentro de *vim* al final del código cambiaremos las rutas
 ```bash
 if filereadable("/home/zafraedu/.vim/.vimrc")
-  source /home/zafraedu/.vim/.vimrc
+  source /home/user/.vim/.vimrc
 endif
 ```
 
