@@ -25,8 +25,8 @@ sudo vim /usr/share/vim/vimrc
 ```
 dentro de *vim* al final del código cambiaremos las rutas
 ```bash
-if filereadable("/home/zafraedu/.vim/.vimrc")
-  source /home/user/.vim/.vimrc
+if filereadable("/home/$(USER)/.vim/.vimrc")
+  source /home/$(USER)/.vim/.vimrc
 endif
 ```
 
