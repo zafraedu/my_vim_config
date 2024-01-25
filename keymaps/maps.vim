@@ -2,10 +2,10 @@
 let mapleader=","
 
 " Shortcuts for split navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Clear highlight after a search
 nnoremap // :noh<CR>
@@ -18,24 +18,42 @@ nnoremap N Nzz
 nnoremap <C-f> :FZF<CR>
 
 " Open/Clone sideBar
-nnoremap <C-a> :NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
 
 " Create a tab
 nnoremap tt :tabe<CR>
+nnoremap <C-t> :tabe<CR>
 
-" Navigate between buffers
-nnoremap ty :bn<CR>
-nnoremap tr :bp<CR>
-
-" Delete a buffer
+" Delete a tab
 nnoremap td :bd<CR>
+nnoremap <C-w> :bd<CR>
+
+" Next tab
+nnoremap ty :tabnext<CR>
+nnoremap tr :tabNext<CR>
 
 " Create splits
-nnoremap <Leader>ns :vsplit<CR>
-nnoremap <Leader>ni :split<CR>
+nnoremap <C-\> :vsplit<CR>
 
 " Close splits and others
-nnoremap qq :q<CR>
+nnoremap qq :q!<CR>
 
 " Save
 inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-s> :w<CR>
+
+" Deshacer
+inoremap <C-z> <Esc>:undo<CR>
+nnoremap <C-z> :undo<CR>
+
+" Cut
+inoremap <C-x> <Esc>dd
+nnoremap <C-x> dd
+
+" Paste
+inoremap <C-v> <Esc>pi
+nnoremap <C-v> p
+
+" Copy
+inoremap <C-c> <Esc>yyi
+nnoremap <C-c> yy
