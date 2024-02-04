@@ -29,8 +29,8 @@ nnoremap td :bd<CR>
 nnoremap <C-w> :bd<CR>
 
 " Next tab
-nnoremap ty :tabnext<CR>
-nnoremap tr :tabNext<CR>
+nnoremap ty :bn<CR>
+nnoremap tr :bp<CR>
 
 " Create splits
 nnoremap <C-\> :vsplit<CR>
@@ -57,3 +57,6 @@ nnoremap <C-v> p
 " Copy
 inoremap <C-c> <Esc>yyi
 nnoremap <C-c> yy
+
+" Formater
+nnoremap <leader>f :Prettier<CR>

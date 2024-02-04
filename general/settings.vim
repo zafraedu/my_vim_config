@@ -14,7 +14,7 @@ set ignorecase  " Ignore case in searchs
 set smartcase	" Consider case if there is a upper case character
 set incsearch	" Incremental search
 set hlsearch    " Highlight matches
-"set nohlsearch  " Clear highlight after a search
+"set nohlsearch " Clear highlight after a search
 
 " indentation
 set autoindent  	" Autoindent always ON.
@@ -30,18 +30,22 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Config interface
+" config interface
 syntax on
-set mouse=a                 " Enable mouse
-set nu rnu                  " Relative numbers and the current line number
-set splitright              " Create the vertical splits to the right
-set splitbelow              " Create the vertical splits to the below
-set scrolloff=8             " Number of lines to keep above and below the cursor
-set showmatch               " Higlight matching parentheses and brackets
-set cursorline              " Highlight cursor line
-"set cursorcolumn            " Higlight cursor column
-set nowrap			        " The text does not protrude from the screen
-set colorcolumn=80,120		" Add a highlight in column [80, 120]
+set mouse=a             " Enable mouse
+set nu rnu              " Relative numbers and the current line number
+set splitright          " Create the vertical splits to the right
+set splitbelow          " Create the vertical splits to the below
+set scrolloff=8         " Number of lines to keep above and below the cursor
+set showmatch           " Higlight matching parentheses and brackets
+set cursorline          " Highlight cursor line
+"set cursorcolumn		" Higlight cursor column
+set nowrap				" The text does not protrude from the screen
+set colorcolumn=80,120	" Add a highlight in column [80, 120]
+set t_Co=256			" Specify the number of colors available in the term.
+" set termguicolors		" Uses true colors if the terminal also supports them.
+
+"wildmenu
 set wildmenu		        " Enable auto completion menu after pressing TAB
 set wildmode=list:longest   " Make wildmenu behave like bash
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
